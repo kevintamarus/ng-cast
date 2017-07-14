@@ -1,26 +1,14 @@
 angular.module('video-player')
 
-.component('app', {
-  bindings: {
+  .component('app', {
+    controller: 'AppCtrl',
+    bindings: {
 
-  },
-  template: `<div id="app container">
-  <nav class="navbar">
-    <div class="col-md-6 col-md-offset-3">
-      <search><h5><em>search</em> component goes here</h5></search>
-    </div>
-  </nav>
-  <div class="row">
-    <div class="col-md-7">
-      <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
-    </div>
-    <div class="col-md-5">
-      <video-list><h5><em>videoList</em> component goes here</h5></video-list>
-    </div>
-  <div>
-</div>`
-});
+    },
+    templateUrl: "src/templates/app.html"
+  })
 
-app.controller('AppCtrl', function($scope) {
-  
-});
+  .controller('AppCtrl', ['$scope', function($scope) {
+    $scope.$ctrl.videos = window.exampleVideoData;
+    $scope.$ctrl.video = window.exampleVideoData[0];  
+  }]);
