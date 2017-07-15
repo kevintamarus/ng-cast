@@ -8,7 +8,7 @@ angular.module('video-player')
     templateUrl: "src/templates/app.html"
   })
 
-  .controller('AppCtrl', ['$scope', function($scope) {
+  .controller('AppCtrl', function($scope) {
     $scope.$ctrl.videos = window.exampleVideoData;
     $scope.$ctrl.video = window.exampleVideoData[0];  
-  }]);
+  });
