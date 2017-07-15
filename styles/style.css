@@ -66,8 +66,16 @@ body {
   font-weight: bold;
 }
 
+.media-object:hover {
+  cursor: pointer;
+}
+
 .video-list-entry-title:hover {
   color: #e62117;
+  cursor: pointer;
+}
+
+.video-list-entry-detail:hover {
   cursor: pointer;
 }
 

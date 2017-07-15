@@ -16,12 +16,14 @@ angular.module('video-player')
     };
     //app
     $scope.$ctrl.selectvideo = function select(){
-
+      console.log('selectvideo function');
     };
     $scope.$ctrl.searchresults = function searchresults(){
+      console.log('searchresult function');
     };
     //search
     $scope.$ctrl.result = function result(query) {
+      console.log('result function');
     };
     $scope.$ctrl.searchclick = function search(query) {
       console.log('clicked');
