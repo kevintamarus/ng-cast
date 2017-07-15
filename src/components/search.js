@@ -6,4 +6,8 @@ angular.module('video-player')
       searchclick : '<'
     },
     templateUrl: "src/templates/search.html"
+  })
+
+  .controller("searchCtrl", function($scope) {
+    $scope.$ctrl.searchclick = function searchclick() {};
   });

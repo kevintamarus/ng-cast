@@ -5,4 +5,4 @@ angular.module('video-player')
       video: '<'
     },
     templateUrl: "src/templates/videoPlayer.html"
-  });
+  })
